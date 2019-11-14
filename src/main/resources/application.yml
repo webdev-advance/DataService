@@ -1,0 +1,19 @@
+spring:
+  profiles: default
+  application:
+    name: order-data-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    
+file.location:  /Users/deepaknegi/Documents/Deepak_Projects/Data_Management/files
+file.archive.location: /Users/deepaknegi/Documents/Deepak_Projects/Data_Management/archive
+inbound.data.queue : dataservice.inbound.data.queue
+dataservice.message.topic: dataservice.message.topic
+
+
+
+server:
+  port: 8050
